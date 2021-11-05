@@ -42,7 +42,7 @@ async def answer(bot, query):
         f_caption=file.caption
         if CUSTOM_FILE_CAPTION:
             try:
-                f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
+                f_caption=CUSTOM_FILE_CAPTION.format(🔖file_name=title, file_size=size, file_caption=f_caption)
             except Exception as e:
                 print(e)
                 f_caption=f_caption
@@ -90,8 +90,8 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
+            InlineKeyboardButton('Search again', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl'),
+            InlineKeyboardButton('🎖️ MORE MOVIES 🎖️', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
